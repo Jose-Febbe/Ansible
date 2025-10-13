@@ -1,0 +1,10 @@
+
+- name: Criar usuários
+  user:
+    name: "{{ item }}"
+    state: present
+    groups: sudo
+    shell: /bin/bash
+  loop:
+    - alice
+    - bob

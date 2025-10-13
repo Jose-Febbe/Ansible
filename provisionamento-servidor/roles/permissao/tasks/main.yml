@@ -1,0 +1,8 @@
+
+- name: Criar diretório de projetos
+  file:
+    path: /opt/projetos
+    state: directory
+    owner: alice
+    group: alice
+    mode: '0755'

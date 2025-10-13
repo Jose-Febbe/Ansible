@@ -1,0 +1,9 @@
+
+- name: Provisionar servidor básico
+  hosts: servidores
+  become: yes
+
+  roles:
+    - webserver
+    - usuarios
+    - permissao
